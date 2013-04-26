@@ -1,0 +1,8 @@
+.DS_Store
+.sass-cache
+.svn
+tags
+*.vimrc
+*.swp
+*~
+*.log
