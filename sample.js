@@ -2,7 +2,7 @@
  * WdfCalendar sample code
  *
  * file created in 2013/04/26 21:30:26.
- * LastUpdated :2013/04/26 23:22:18.
+ * LastUpdated :2013/04/27 10:53:07.
  *
  * Author: iNo
  * Copyright (c) 2013 Serendip (www.serendip.ws)
@@ -42,7 +42,7 @@
             var cDt = calData[i];
             var day = cDt.isBlank ? '&nbsp;' : cDt.day;
             tag += cDt.dayWeek === 0 ? '<tr class="week week-' + cDt.weekLineRows + '">' : '';
-            tag += '<td class="day day-' + aWeekName[cDt.dayWeek] + (cDt.holidayName ? ' holiday' : '') + (cDt.isFurikae ? ' furikae' : '') + (cDt.isBlank ? ' blank' : '') + '"' + getTitleAttr(cDt) + '>' + day + '</td>';
+            tag += '<td class="day day-' + aWeekName[cDt.dayWeek] + (cDt.holidayName ? ' holiday' : '') + (cDt.isFurikae ? ' furikae' : '') + (cDt.isBlank ? ' blank' : '') + (cDt.isToday ? ' today' : '') + '"' + getTitleAttr(cDt) + '>' + day + '</td>';
             tag += cDt.dayWeek === 6 ? '</tr>' : '';
         }
 
