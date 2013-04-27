@@ -1,10 +1,10 @@
 /**********************************************************************************
- * WdfCalendar ver 1.0
+ * WdfCalendar ver 1.1
  *
  * A Calendar Data JavaScript
  *
  * file created in 2006/02/26 19:23:22.
- * LastUpdated :2013/04/27 10:48:03.
+ * LastUpdated :2013/04/27 10:57:45.
  * Author: iNo
  *
  * Usage:
