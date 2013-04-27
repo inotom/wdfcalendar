@@ -4,7 +4,7 @@
  * A Calendar Data JavaScript
  *
  * file created in 2006/02/26 19:23:22.
- * LastUpdated :2013/04/26 23:14:54.
+ * LastUpdated :2013/04/27 10:48:03.
  * Author: iNo
  *
  * Usage:
@@ -51,22 +51,24 @@ var WdfCalendar = (function () {
      * A day object
      */
     var CalDay = (function() {
-        function CalDay(dayWeek, weekLineRows) {
-            this.isBlank = true;
-            this.day = 0;
+        /**
+         * @constructor
+         * @param {number} dayWeek Index of week. Sunday is 0,
+         * @param {number} weekLineRows Index of calendar table row.
+         * @param {Object} options Unrequired arguments
+         */
+        function CalDay(dayWeek, weekLineRows, options) {
+            if (options === undefined) {
+                options = {};
+            }
+            this.isBlank = options.isBlank === undefined ? true : options.isBlank;
+            this.day = options.day === undefined ? 0 : options.day;
             this.dayWeek = dayWeek;
             this.weekLineRows = weekLineRows;
-            this.isToday = false;
-            this.holidayName = null;
-            this.isFurikae = false;
+            this.isToday = options.isToday === undefined ? false : options.isToday;
+            this.holidayName = options.holidayName === undefined ? null : options.holidayName;
+            this.isFurikae = options.isFurikae === undefined ? false : options.isFurikae;
         }
-        CalDay.prototype.setDay = function(day, isToday, holidayName, isFurikae) {
-            this.isBlank = false;
-            this.day = day;
-            this.isToday = isToday;
-            this.holidayName = holidayName;
-            this.isFurikae = isFurikae;
-        };
         return CalDay;
     })();
 
@@ -154,8 +156,14 @@ var WdfCalendar = (function () {
         /* set days */
         for (var i = 0; i < numDays; i++) {
             var day = i + 1;
-            var calDay = new CalDay(dayWeek, parseInt((firstDayWeek + day - 1) / 7, 10));
-            calDay.setDay(day, checkToday(year, month, day), holidays[day], checkAltHoliday(dayWeek, day, holidays, i));
+            var options = {
+                'isBlank' : false,
+                'day' : day,
+                'isToday' : checkToday(year, month, day),
+                'holidayName' : holidays[day],
+                'isFurikae' : checkAltHoliday(dayWeek, day, holidays, i)
+            };
+            var calDay = new CalDay(dayWeek, parseInt((firstDayWeek + day - 1) / 7, 10), options);
             this.calData.push(calDay);
             dayWeek = ((dayWeek === 6) ? 0 : dayWeek + 1);
         }
