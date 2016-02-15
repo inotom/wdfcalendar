@@ -4,7 +4,6 @@
  * A Calendar Data JavaScript
  *
  * file created in 2006/02/26 19:23:22.
- * LastUpdated :2013/04/27 10:57:45.
  * Author: iNo
  *
  * Usage:
@@ -17,7 +16,7 @@
  *
  * License: BSD license
  *
-  Copyright (c) 2006-2013 iNo (http://www.serendip.ws/) All rights reserved. {{{
+  Copyright (c) 2006-2016 iNo (http://www.serendip.ws/) All rights reserved. {{{
 
   Redistribution and use in source and binary forms, with or without modification,
   are permitted provided that the following conditions are met:
