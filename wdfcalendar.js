@@ -283,49 +283,49 @@
          }
 
          if (month === 1 && i === 1) { // 元旦
-           holidays[i] = "\u5143\u65E6";
+           holidays[i] = "元旦";
          } else if (month === 1 && i === 15 && year < 2000) { // 成人の日
-           holidays[i] = "\u6210\u4EBA\u306E\u65E5";
+           holidays[i] = "成人の日";
          } else if (month === 1 && weekRow === 2 && theDay.getDay() === 1 && year >= 2000) { // 成人の日
-           holidays[i] = "\u6210\u4EBA\u306E\u65E5";
-         } else if (month === 2 && i === 11) { // 建国記念日
-           holidays[i] = "\u5EFA\u56FD\u8A18\u5FF5\u306E\u65E5";
+           holidays[i] = "成人の日";
+         } else if (month === 2 && i === 11) { // 建国記念の日
+           holidays[i] = "建国記念の日";
          } else if (month === 3 && i === getVernal(year)) { // 春分
-           holidays[i] = "\u6625\u5206\u306E\u65E5";
+           holidays[i] = "春分の日";
          } else if (month === 4 && i === 29 && year <= 1988) { // 天皇誕生日
-           holidays[i] = "\u5929\u7687\u8A95\u751F\u65E5";
+           holidays[i] = "天皇誕生日";
          } else if (month === 4 && i === 29 && year >= 1989 && year < 2007) { // みどりの日
-           holidays[i] = "\u307F\u3069\u308A\u306E\u65E5";
+           holidays[i] = "みどりの日";
          } else if (month === 4 && i === 29 && year >= 2007) { // 昭和の日
-           holidays[i] = "\u662D\u548C\u306E\u65E5";
+           holidays[i] = "昭和の日";
          } else if (month === 5 && i === 3) { // 憲法記念日
-           holidays[i] = "\u61B2\u6CD5\u8A18\u5FF5\u65E5";
+           holidays[i] = "憲法記念日";
          } else if (month === 5 && i === 4 && year >= 1986 && year <= 2006) { // 国民の休日
-           holidays[i] = "\u56FD\u6C11\u306E\u4F11\u65E5";
+           holidays[i] = "国民の休日";
          } else if (month === 5 && i === 4 && year >= 2007) { // みどりの日
-           holidays[i] = "\u307F\u3069\u308A\u306E\u65E5";
+           holidays[i] = "みどりの日";
          } else if (month === 5 && i === 5) { // こどもの日
-           holidays[i] = "\u3053\u3069\u3082\u306E\u65E5";
+           holidays[i] = "こどもの日";
          } else if (month === 7 && i === 20 && year >= 1996 && year <=2002) { // 海の日
-           holidays[i] = "\u6D77\u306E\u65E5";
+           holidays[i] = "海の日";
          } else if (month === 7 && weekRow === 3 && theDay.getDay() === 1 && year >= 2003) { // 海の日
-           holidays[i] = "\u6D77\u306E\u65E5";
+           holidays[i] = "海の日";
          } else if (month === 9 && i === 15 && year <= 2002) { // 敬老の日
-           holidays[i] = "\u656C\u8001\u306E\u65E5";
+           holidays[i] = "敬老の日";
          } else if (month === 9 && weekRow === 3 && theDay.getDay() === 1 && year >= 2003) { // 敬老の日
-           holidays[i] = "\u656C\u8001\u306E\u65E5";
+           holidays[i] = "敬老の日";
          } else if (month === 9 && i === getAutumnal(year)) { // 秋分の日
-           holidays[i] = "\u79CB\u5206\u306E\u65E5";
+           holidays[i] = "秋分の日";
          } else if (month === 10 && i === 10 && year < 2000) { // 体育の日
-           holidays[i] = "\u4F53\u80B2\u306E\u65E5";
+           holidays[i] = "体育の日";
          } else if (month === 10 && weekRow === 2 && theDay.getDay() === 1 && year >= 2000) { // 体育の日
-           holidays[i] = "\u4F53\u80B2\u306E\u65E5";
+           holidays[i] = "体育の日";
          } else if (month === 11 && i === 3) { // 文化の日
-           holidays[i] = "\u6587\u5316\u306E\u65E5";
+           holidays[i] = "文化の日";
          } else if (month === 11 && i === 23) { // 勤労感謝の日
-           holidays[i] = "\u52E4\u52B4\u611F\u8B1D\u306E\u65E5";
+           holidays[i] = "勤労感謝の日";
          } else if (month === 12 && i === 23 && year >= 1989) { // 天皇誕生日
-           holidays[i] = "\u5929\u7687\u8A95\u751F\u65E5";
+           holidays[i] = "天皇誕生日";
          }
        }
        return holidays;
