@@ -14,7 +14,7 @@
     "test": "./node_modules/.bin/karma start karma.conf.js"
   },
   "author": "iNo <wdf7322@yahoo.co.jp>",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "uglifyjs": "^2.4.10",
