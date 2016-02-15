@@ -70,16 +70,16 @@
        * @param {Object} options Unrequired arguments
        */
        function CalDay(dayWeek, weekLineRows, options) {
-        if (options === undefined) {
+        if (typeof options === 'undefined') {
           options = {};
         }
-        this.isBlank = options.isBlank === undefined ? true : options.isBlank;
-        this.day = options.day === undefined ? 0 : options.day;
+        this.isBlank = (typeof options.isBlank === 'undefined') ? true : options.isBlank;
+        this.day = (typeof options.day === 'undefined') ? 0 : options.day;
         this.dayWeek = dayWeek;
         this.weekLineRows = weekLineRows;
-        this.isToday = options.isToday === undefined ? false : options.isToday;
-        this.holidayName = options.holidayName === undefined ? null : options.holidayName;
-        this.isFurikae = options.isFurikae === undefined ? false : options.isFurikae;
+        this.isToday = (typeof options.isToday === 'undefined') ? false : options.isToday;
+        this.holidayName = (typeof options.holidayName === 'undefined') ? null : options.holidayName;
+        this.isFurikae = (typeof options.isFurikae === 'undefined') ? false : options.isFurikae;
        }
        return CalDay;
      })();
