@@ -1,0 +1,23 @@
+{
+  "name": "wdfcalendar",
+  "version": "1.2.0",
+  "description": "A Calendar Data JavaScript",
+  "main": "wdfcalendar.js",
+  "scripts": {
+    "build": "npm run build-script",
+    "build-script": "cat src/wdfcalendar.js > dist/wdfcalendar.min.js",
+    "build-dist": "npm run build-script-dist",
+    "build-script-dist": "cat src/wdfcalendar.js | uglifyjs -m --comments | gsed -e '1i /* wdfcalendar.js v1.2.0 | (c) 2006 - 2016 http://www.serendip.ws/ | BSD License */' > dist/wdfcalendar.min.js",
+    "server": "browser-sync start --server dist --files 'dist/**/*' --no-open",
+    "watch": "watch 'npm run build' src",
+    "start": "npm run server & npm run watch",
+    "test": "./node_modules/.bin/karma start karma.conf.js"
+  },
+  "author": "iNo <wdf7322@yahoo.co.jp>",
+  "license": "BSD",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "uglifyjs": "^2.4.10",
+    "watch": "^0.17.1"
+  }
+}

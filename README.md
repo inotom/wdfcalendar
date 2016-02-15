@@ -12,3 +12,12 @@ cal.prev();      // set previous month
 cal.getYear();   // get number of year
 cal.getMonth();  // get number of month (January is 1)
 ```
+
+## install npm package
+```
+npm install \
+browser-sync \
+uglifyjs \
+watch \
+--save-dev
+```

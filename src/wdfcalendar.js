@@ -1,6 +1,6 @@
 /**********************************************************************************
  *
- * WdfCalendar ver 1.2
+ * WdfCalendar ver 1.2.0
  *
  * A Calendar Data JavaScript
  *
@@ -62,7 +62,7 @@
    * @constructor
    * @param {number} dayWeek Index of week. Sunday is 0,
    * @param {number} weekLineRows Index of calendar table row.
-   * @param {Object} options Unrequired arguments
+   * @param {Object} [options] Unrequired arguments
    */
   var CalDay = function(dayWeek, weekLineRows, options) {
     if (typeof options === 'undefined') {
