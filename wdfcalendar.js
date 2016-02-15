@@ -366,7 +366,3 @@ var WdfCalendar = (function () {
 
     return WdfCalendar;
 })();
-
-/*
-vim:fdl=0 fdm=marker:ts=4 sw=4 sts=0:
-*/
