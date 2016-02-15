@@ -310,6 +310,8 @@
            holidays[i] = "海の日";
          } else if (month === 7 && weekRow === 3 && theDay.getDay() === 1 && year >= 2003) { // 海の日
            holidays[i] = "海の日";
+         } else if (month === 8 && i === 11 && year >= 2016) { // 山の日
+           holidays[i] = "山の日";
          } else if (month === 9 && i === 15 && year <= 2002) { // 敬老の日
            holidays[i] = "敬老の日";
          } else if (month === 9 && weekRow === 3 && theDay.getDay() === 1 && year >= 2003) { // 敬老の日
