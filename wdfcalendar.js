@@ -1,6 +1,6 @@
 /**********************************************************************************
  *
- * WdfCalendar ver 1.1
+ * WdfCalendar ver 1.2
  *
  * A Calendar Data JavaScript
  *
